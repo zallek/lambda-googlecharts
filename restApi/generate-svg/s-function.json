@@ -24,18 +24,30 @@
       "authorizationType": "none",
       "authorizerFunction": false,
       "apiKeyRequired": false,
-      "requestParameters": {},
+      "requestParameters": {
+        "integration.request.querystring.width": "method.request.querystring.width",
+        "integration.request.querystring.height": "method.request.querystring.height",
+        "integration.request.querystring.chartOptions": "method.request.querystring.chartOptions"
+      },
       "requestTemplates": "$${apiRequestTemplate}",
       "responses": {
         "500": {
+          "selectionPattern": "^\\[ServerError\\].*",
           "statusCode": "500"
+        },
+        "400": {
+          "selectionPattern": "^\\[BadRequest\\].*",
+          "statusCode": "400"
         },
         "default": {
           "statusCode": "200",
-          "responseParameters": {},
+          "responseParameters": {
+            "method.response.header.Content-Type": "'image/svg+xml'"
+          },
           "responseModels": {},
-          "responseTemplates": {},
-          "application/json": ""
+          "responseTemplates": {
+            "image/svg+xml": "$input.path('$')"
+          }
         }
       }
     }
