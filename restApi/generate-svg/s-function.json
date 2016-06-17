@@ -4,7 +4,7 @@
   "description": "Serverless Lambda function for project: lambda-googlecharts",
   "customName": false,
   "customRole": false,
-  "handler": "generate-svg/handler.handler",
+  "handler": "restApi/generate-svg/handler.handler",
   "timeout": 10,
   "memorySize": 1024,
   "authorizer": {},

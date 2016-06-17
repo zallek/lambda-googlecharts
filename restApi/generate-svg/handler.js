@@ -2,6 +2,7 @@
 
 const spawn = require('child_process').exec;
 const icu = require('full-icu');
+require('node-googlecharts');
 
 
 // Lambda Handler
