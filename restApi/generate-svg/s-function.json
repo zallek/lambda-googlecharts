@@ -9,7 +9,10 @@
   "memorySize": 1024,
   "authorizer": {},
   "custom": {
-    "excludePatterns": [],
+    "excludePatterns": [
+      ".git",
+      "node_modules/full-icu/node_modules"
+    ],
     "envVars": [],
     "optimize": true
   },
