@@ -12,13 +12,17 @@
     "url": "git+https://github.com/serverless/lambda-googlecharts.git"
   },
   "dependencies": {
+    "full-icu": "^1.0.3",
+    "node-googlecharts": "zallek/node-googlecharts#a47ecb9",
     "serverless-optimizer-plugin": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/serverless/lambda-googlecharts/issues"
   },
   "homepage": "https://github.com/serverless/lambda-googlecharts#readme",
-  "scripts": {},
+  "scripts": {
+    "run:generate-svg": "NODE_ICU_DATA=node_modules/full-icu serverless function run generate-svg"
+  },
   "_npmOperationalInternal": {
     "host": "packages-13-west.internal.npmjs.com",
     "tmp": "tmp/lambda-googlecharts-0.2.1.tgz_1458892667270_0.7738919164985418"
