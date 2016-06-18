@@ -8,6 +8,7 @@ Based on [serverless](http://www.serverless.com).
 - Node.js > 4.0
 - [Serverless](http://docs.serverless.com/docs/installing-serverless)
 
+
 ## Install
 
 Initializes a new Serverless project. [more info](http://docs.serverless.com/docs/project-init)
@@ -20,12 +21,13 @@ Install project dependencies
 npm install
 ```
 
-Run functions locally
+
+## Run functions locally
 ```
 serverless function run generate-svg
 ```
 
-Deploy your functions and endpoints:
+## Deploy your functions and endpoints:
 ```
 serverless dash deploy
 ```
