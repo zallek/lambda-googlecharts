@@ -12,7 +12,8 @@
     "url": "git+https://github.com/serverless/lambda-googlecharts.git"
   },
   "dependencies": {
-    "serverless-optimizer-plugin": "^2.0.0"
+    "full-icu": "^1.0.3",
+    "node-googlecharts": "zallek/node-googlecharts#master"
   },
   "bugs": {
     "url": "https://github.com/serverless/lambda-googlecharts/issues"
