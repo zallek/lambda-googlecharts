@@ -1,27 +1,23 @@
 {
   "name": "lambda-googlecharts",
-  "version": "0.2.1",
-  "description": "A bare bones Serverless Framework project with examples for common use cases.",
-  "author": {
-    "name": "Serverless.com"
-  },
+  "version": "0.0.1",
+  "description": "Google Chart generation for AWS Lambda",
+  "author": "Nicolas Fortin <nicolas.fortin37@gmail.com>",
   "license": "MIT",
-  "private": false,
+  "engines": {
+    "node" : ">=4.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serverless/lambda-googlecharts.git"
+    "url": "git+https://github.com/zallek/lambda-googlecharts.git"
   },
+  "bugs": {
+    "url": "https://github.com/zallek/lambda-googlecharts/issues"
+  },
+  "homepage": "https://github.com/zallek/lambda-googlecharts#readme",
+  "scripts": {},
   "dependencies": {
     "full-icu": "^1.0.3",
     "node-googlecharts": "zallek/node-googlecharts#master"
-  },
-  "bugs": {
-    "url": "https://github.com/serverless/lambda-googlecharts/issues"
-  },
-  "homepage": "https://github.com/serverless/lambda-googlecharts#readme",
-  "scripts": {},
-  "_npmOperationalInternal": {
-    "host": "packages-13-west.internal.npmjs.com",
-    "tmp": "tmp/lambda-googlecharts-0.2.1.tgz_1458892667270_0.7738919164985418"
   }
 }
