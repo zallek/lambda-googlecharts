@@ -1,6 +1,6 @@
 # Google Chart generation for Lambda
 
-Based on [serverless](http://www.serverless.com).
+[Serverless](http://www.serverless.com) Lambda wrapper around [node-googlecharts](https://github.com/zallek/lambda-googlecharts).
 
 
 ## Requirements
@@ -35,4 +35,4 @@ serverless dash deploy
 ## FAQ
 
 #### Why spawning a child process to run `node-googlecharts`?
-`node-googlecharts` needs system dependencies that require specific environment variables to run. Unfortunately, AWS Lambda does not allow to define custom env variables for the whole lambda. Indeed, spawning child processes seem to be the recommended way according to amazon. [more info](https://aws.amazon.com/fr/blogs/compute/nodejs-packages-in-lambda/)
+[node-googlecharts](https://github.com/zallek/lambda-googlecharts) needs system dependencies that require specific environment variables to run. Unfortunately, AWS Lambda does not allow to define custom env variables for the whole lambda. Indeed, spawning child processes seem to be the recommended way according to amazon. [more info](https://aws.amazon.com/fr/blogs/compute/nodejs-packages-in-lambda/)
