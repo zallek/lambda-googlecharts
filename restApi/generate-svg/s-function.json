@@ -25,8 +25,6 @@
       "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {
-        "integration.request.querystring.width": "method.request.querystring.width",
-        "integration.request.querystring.height": "method.request.querystring.height",
         "integration.request.querystring.chartOptions": "method.request.querystring.chartOptions"
       },
       "requestTemplates": "$${apiRequestTemplate}",

@@ -5,12 +5,8 @@ const spawn = require('child_process').exec;
 
 // Lambda Handler
 module.exports.handler = function(event, context) {
-  if (!event.chartOptions) {
-    return context.done('[BadRequest] no chartOptions');
-  }
-
   const ps = spawn(
-    'node node_modules/node-googlecharts/bin/node-googlecharts \'' + JSON.stringify(event) + '\'',
+    `node node_modules/node-googlecharts/bin/node-googlecharts '${JSON.stringify(event.chartOptions)}' 'svg'`,
     (error, stdout, stderr) => {
       if (error) {
         context.done(new Error('[ServerError] ' + error.message));
