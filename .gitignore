@@ -42,7 +42,7 @@ admin.env
 #Ignore _meta folder
 _meta
 
-#gh-pages
+#Ignore master files
 .npmignore
 .nvmrc
 README.md
