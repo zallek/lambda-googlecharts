@@ -40,6 +40,7 @@
         "default": {
           "statusCode": "200",
           "responseParameters": {
+            "method.response.header.Access-Control-Allow-Origin": "'*'",
             "method.response.header.Content-Type": "'image/svg+xml'"
           },
           "responseModels": {},
